@@ -69,9 +69,9 @@ const Navbar = () => {
               setMenuOpen(!menuOpen);
             }}
           >
-            <span className="1"></span>
-            <span className="2"></span>
-            <span className="3"></span>
+            <span className="one"></span>
+            <span className="two"></span>
+            <span className="three"></span>
           </div>
         </div>
         <ul className={menuOpen ? "open" : ""}>
@@ -99,7 +99,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/services"
+              to="/volunteer"
               onClick={() => {
                 handleClick(3);
               }}
@@ -110,7 +110,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/portfolio"
+              to="/services#services"
               onClick={() => {
                 handleClick(4);
               }}

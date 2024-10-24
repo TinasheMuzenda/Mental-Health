@@ -32,15 +32,25 @@ nav {
         display: none;
         flex-direction: column;
         justify-content: space-between;
+        align-items: end;
         width: 2rem;
         height: 1.3rem;
         cursor: pointer;
 
         span {
           height: 0.2rem;
-          width: 100%;
           background-color: var(--main-color);
           border-radius: 0.2rem;
+        }
+
+        .one {
+          width: 100%;
+        }
+        .two {
+          width: 75%;
+        }
+        .three {
+          width: 50%;
         }
       }
     }
