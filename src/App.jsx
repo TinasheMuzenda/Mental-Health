@@ -8,12 +8,14 @@ import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Volunteer from "./pages/Volunteer";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return (
     <div className="App">
       {/* <Navbar /> */}
       {/* <Home /> */}
+      <Footer/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

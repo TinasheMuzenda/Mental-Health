@@ -1,0 +1,78 @@
+footer {
+  padding: 2rem 0;
+
+  .container {
+    .row {
+      .sides {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+          padding: 0;
+          li {
+            list-style: none;
+            padding-top: 1rem;
+
+            a {
+              color: var(--main-color);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .left {
+        /* display: block; */
+        display: none;
+        text-align: start;
+      }
+      .right {
+        /* text-align: end; */
+        text-align: center;
+      }
+
+      .center {
+        /* display: flex */
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          width: 90%;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  footer {
+    .container {
+      .row {
+        .left {
+          display: block;
+        }
+        .right {
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  footer {
+    .container {
+      .row {
+        .center {
+          display: flex;
+        }
+      }
+    }
+  }
+}
