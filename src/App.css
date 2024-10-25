@@ -5,7 +5,15 @@
 
 button {
   border: none;
-  width: 9rem;
-  height: 2.3rem;
-  font-weight: 500;
+  width: 10rem;
+  height: 2.5rem;
+  font-weight: 600;
+}
+
+span {
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
 }
