@@ -17,3 +17,19 @@ span {
 a {
   text-decoration: none;
 }
+
+p {
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.headings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    font-weight: 700;
+  }
+}

@@ -1,9 +1,14 @@
+@font-face {
+  font-family: Poppins;
+  src: url('/Poppins-Regular.ttf');
+}
+
 :root {
   --primary-color: #fff;
   --secondary-color: #1a1919;
   --main-color: #3453a0;
   --background-color: #d9d9d9;
-  --paragraph-color: #3c3838;
+  --scroll-color: #3c3838;
   --sub-color: #aaa;
 }
 
@@ -15,14 +20,14 @@
   background-color: var(--scroll-color);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(94, 94, 94);
+  background-color: var(--sub-color);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "open", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {

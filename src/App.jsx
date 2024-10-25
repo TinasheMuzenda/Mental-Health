@@ -14,8 +14,8 @@ const App = () => {
   return (
     <div className="App">
       {/* <Navbar /> */}
-      {/* <Home /> */}
-      <Footer/>
+      <Home />
+      {/* <Footer/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

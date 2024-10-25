@@ -24,7 +24,7 @@ main {
 
             h1 {
               font-weight: 700;
-              font-size: 2.7rem;
+              font-size: 2.65rem;
               color: var(--primary-color);
               padding-bottom: 1rem;
             }
@@ -54,6 +54,85 @@ main {
       }
     }
   }
+
+  .about {
+    padding: 3rem 0;
+
+    .container {
+      .aboutRow {
+        padding-top: 2rem;
+
+        .aboutLeft {
+          .aboutImage {
+            width: 100%;
+          }
+        }
+        .aboutRight {
+          padding-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 6%;
+
+          .aboutSubHeading {
+            width: 100%;
+
+            h3 {
+              font-weight: 700;
+            }
+          }
+          .aboutParagraph {
+            width: 100%;
+          }
+          button {
+            background: var(--main-color);
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+
+  .volunteer {
+    background: var(--main-color);
+    color: var(--primary-color);
+    padding: 3rem 0;
+
+    .container {
+      .volunteerHeading {
+        padding-bottom: 2rem;
+      }
+      .row {
+        padding-top: 1rem;
+        .volunteerSides {
+          .volunteerImages {
+            width: 100%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          }
+          .display {
+            display: none;
+          }
+        }
+        .volunteerCenter {
+          display: flex;
+            justify-content: center;
+            align-items: center;
+          a {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+            color: var(--primary-color);
+
+            img {
+              width: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /*
@@ -68,10 +147,49 @@ M E D I A  Q U E R I E S
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  main {
+    .about {
+      .container {
+        .aboutRow {
+          .aboutRight {
+            padding: 0 0 0 2rem;
+            .aboutSubHeading {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+
+    .volunteer {
+      .container {
+        .row {
+          .volunteerSides {
+            .display {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  main {
+    .about {
+      .container {
+        .aboutRow {
+          .aboutRight {
+            .aboutParagraph {
+              width: 95%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
