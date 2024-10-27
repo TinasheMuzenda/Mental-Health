@@ -193,7 +193,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="support">
+      <section className="support">
         <div className="container">
           <div className="inside">
             <div className="textHead">
@@ -216,7 +216,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 };
