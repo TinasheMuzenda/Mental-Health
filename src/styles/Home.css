@@ -60,8 +60,6 @@ main {
 
     .container {
       .aboutRow {
-        padding-top: 2rem;
-
         .aboutLeft {
           .aboutImage {
             width: 100%;
@@ -99,11 +97,7 @@ main {
     padding: 3rem 0;
 
     .container {
-      .volunteerHeading {
-        padding-bottom: 2rem;
-      }
       .row {
-        padding-top: 1rem;
         .volunteerSides {
           .volunteerImages {
             width: 100%;
@@ -115,8 +109,8 @@ main {
         }
         .volunteerCenter {
           display: flex;
-            justify-content: center;
-            align-items: center;
+          justify-content: center;
+          align-items: center;
           a {
             display: flex;
             justify-content: center;
@@ -129,6 +123,79 @@ main {
               width: 5rem;
             }
           }
+        }
+      }
+    }
+  }
+
+  .services {
+    padding: 3rem 0;
+
+    .container {
+      .row {
+        .right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .display {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .line {
+    padding: 3rem 0;
+    background-color: var(--sub-color);
+    display: none;
+
+    .container {
+      .row {
+        .left {
+          img {
+            width: 100%;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+          }
+        }
+        .right {
+          padding-left: 4rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .underline {
+            border-bottom: 3px solid var(--main-color);
+            padding-bottom: 2px;
+            width: fit-content;
+            font-weight: 500;
+          }
+          .text {
+            padding-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .support {
+    padding: 3rem 0;
+    background-color: var(--main-color);
+
+    .container {
+      border: 3px solid var(--primary-color);
+      padding: 1.5rem;
+
+      .inside{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: var(--primary-color);
+        gap: .5rem;
+
+        h2{
+          font-weight: 700;
         }
       }
     }
@@ -188,6 +255,20 @@ M E D I A  Q U E R I E S
           }
         }
       }
+    }
+
+    .services {
+      .container {
+        .row {
+          .display {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .line {
+      display: block;
     }
   }
 }

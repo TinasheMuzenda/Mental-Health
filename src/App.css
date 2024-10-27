@@ -28,6 +28,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 1rem;
 
   h2 {
     font-weight: 700;
