@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./pages/Navbar";
+// import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Volunteer from "./pages/Volunteer";
-import Footer from "./pages/Footer";
+// import Footer from "./pages/Footer";
 
 const App = () => {
   return (

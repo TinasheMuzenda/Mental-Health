@@ -7,6 +7,8 @@ import VolunteerLove from "../assets/volunteerLove.jpg";
 import Hands from "../assets/hands.svg";
 import ServImg from "../assets/healthNetwork.jpg";
 import Line from "../assets/warmLine.jpg";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -15,6 +17,7 @@ const Home = () => {
   };
   return (
     <main>
+      <Navbar />
       <section className="banner">
         <div className="container">
           <div className="row">
@@ -217,6 +220,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };
