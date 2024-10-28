@@ -2,7 +2,9 @@ main {
   .contact-banner {
     width: 100%;
     height: 60vh;
-    background-image: url("../assets/bannerBackground.png");
+    background-color: dimgray;
+    background-image: url("../assets/call-center.jpg");
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -24,13 +26,21 @@ main {
         .left {
           padding-bottom: 2rem;
 
+          span {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+          }
+
+          a {
+            color: var(--secondary-color);
+          }
+
           .contact-ways {
             display: flex;
             flex-direction: column;
 
             .way {
               display: flex;
-              align-items: start;
               gap: 0.7rem;
             }
           }
@@ -61,7 +71,9 @@ main {
 
     .container {
       height: 60vh;
-      background-image: url("../assets/bannerBackground.png");
+      background-color: dimgray;
+      background-image: url("../assets/lend-a-hand.jpg");
+      background-blend-mode: multiply;
       background-position: center;
       background-size: cover;
       display: flex;
@@ -85,10 +97,10 @@ main {
         }
       }
 
-      button{
+      button {
         background-color: var(--main-color);
-        a{
-            color: var(--primary-color);
+        a {
+          color: var(--primary-color);
         }
       }
     }
