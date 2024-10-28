@@ -8,7 +8,7 @@ const Navbar = () => {
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [navbarPosition, setNavbarPosition] = useState(0);
   const menuRef = useRef(null);
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState();
   const handleClick = (number) => {
     setActiveTab(number);
   };
