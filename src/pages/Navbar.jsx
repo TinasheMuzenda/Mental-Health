@@ -110,7 +110,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/services#services"
+              to="/services"
               onClick={() => {
                 handleClick(4);
               }}
