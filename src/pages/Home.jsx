@@ -12,12 +12,15 @@ import Footer from "./Footer";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState(1);
+
   const handleClick = (number) => {
     setActiveTab(number);
   };
+
   return (
     <main>
       <Navbar />
+
       <section className="banner">
         <div className="container">
           <div className="row">
@@ -30,10 +33,8 @@ const Home = () => {
                   <button className="firstButton">
                     <Link
                       to="/contact"
-                      onClick={() => {
-                        handleClick(5);
-                      }}
-                      className={` ${activeTab == 5 ? "active" : ""} `}
+                      onClick={() => handleClick(5)}
+                      className={activeTab === 5 ? "active" : ""}
                     >
                       Contact Us
                     </Link>
@@ -44,7 +45,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md"></div>
+            <div className="col-md" />
           </div>
         </div>
       </section>
@@ -56,7 +57,11 @@ const Home = () => {
           </div>
           <div className="row aboutRow">
             <div className="col-md-6 aboutLeft">
-              <img src={AboutImage} alt="About Image" className="aboutImage" />
+              <img
+                src={AboutImage}
+                alt="About us section image"
+                className="aboutImage"
+              />
             </div>
             <div className="col-md-6 aboutRight">
               <div className="aboutSubHeading">
@@ -67,7 +72,7 @@ const Home = () => {
               <div className="aboutParagraph">
                 <p>
                   We are a non-profit cultivating peer leadership, building
-                  community, and advancing social justice in mental health.We
+                  community, and advancing social justice in mental health. We
                   rely on small donations to provide accessible mental health
                   services to our community. If you can donate today, it will go
                   a long way towards helping others.
@@ -99,21 +104,19 @@ const Home = () => {
             <div className="col-md-5 volunteerSides">
               <img
                 src={VolunteerHands}
-                alt="volunteering"
+                alt="Volunteering hands"
                 className="volunteerImages"
               />
             </div>
             <div className="col-md-2 volunteerCenter">
               <Link
                 to="/volunteer"
-                onClick={() => {
-                  handleClick(3);
-                }}
-                className={` ${activeTab == 3 ? "active" : ""} `}
+                onClick={() => handleClick(3)}
+                className={activeTab === 3 ? "active" : ""}
               >
                 <img
                   src={Hands}
-                  alt="volunteering"
+                  alt="Helping hands icon"
                   className="volunteerImages"
                 />
                 <p>Lend a hand</p>
@@ -122,7 +125,7 @@ const Home = () => {
             <div className="col-md-5 volunteerSides">
               <img
                 src={VolunteerLove}
-                alt="volunteering"
+                alt="Volunteers showing love"
                 className="volunteerImages display"
               />
             </div>
@@ -145,13 +148,13 @@ const Home = () => {
                 with lived experience through workforce development services,
                 offers evidence-based mental health trainings to professionals,
                 and enhances digital access in underserved communities. Our
-                commitment to advocacy, innovation, training and workforce
+                commitment to advocacy, innovation, training, and workforce
                 development aims to foster autonomy and resilience among diverse
                 populations.
               </p>
             </div>
             <div className="col-md right display">
-              <img src={ServImg} alt="Services Health Network" />
+              <img src={ServImg} alt="Health network services" />
             </div>
           </div>
         </div>
@@ -162,23 +165,21 @@ const Home = () => {
           <div className="headings">
             <h2>WARM LINE</h2>
           </div>
-
           <div className="row">
             <div className="col-md-5 left">
-              <img src={Line} alt="Warm Line Image" />
+              <img src={Line} alt="Warm Line service" />
             </div>
             <div className="col-md-7 right">
               <p className="underline">
                 The MHASF Warm Line is here for you 24/7.
               </p>
-
               <div className="text">
                 <p>
-                  Call or Text{" "}
-                  <a href="tel: +263718218456" target="_blank">
+                  Call or text{" "}
+                  <a href="tel:+263718218456" target="_blank">
                     855-600 WARM (9276)
                   </a>{" "}
-                  to speak with a counselor 24/7 use our Chat widget at the
+                  to speak with a counselor 24/7 or use our Chat widget at the
                   bottom right to speak to a counselor.
                 </p>
                 <p>
@@ -186,9 +187,9 @@ const Home = () => {
                   using the wisdom of lived experience to connect, inspire hope,
                   and empower our community toward unlimited recovery. We have
                   provided assistance via phone and web chat to anyone in need
-                  since 2014. Some concerns callers share are challenges with
-                  interpersonal relationships, anxiety, pain, depression,
-                  finances, alcohol drug use, etc.
+                  since 2014. Some concerns callers share include challenges
+                  with interpersonal relationships, anxiety, pain, depression,
+                  finances, alcohol, drug use, etc.
                 </p>
               </div>
             </div>
@@ -200,26 +201,27 @@ const Home = () => {
         <div className="container">
           <div className="inside">
             <div className="textHead">
-              <h2>SUPPORT OUR CASE</h2>
+              <h2>SUPPORT OUR CAUSE</h2>
               <h3>Help sustain our frontline workers</h3>
             </div>
             <p>
-              As a result of the COVID-19 pandemic ,MHASF services have
-              significantly increased Our Warm Line team has been working
+              As a result of the COVID-19 pandemic, MHASF services have
+              significantly increased. Our Warm Line team has been working
               non-stop to provide emotional and mental support to the entire
               state of CA. If you are able to donate, we can hire more people to
               meet the demand of our calls. We appreciate your help and support
-              during this difficult timeThe COVID-19 pandemic has skyrocketed
-              the demand for MHASF's mental health services. Our Warm Line team
-              has been tirelessly providing emotional and mental support to
-              Californians. To meet this growing need, we urge your generous
-              support to expand our team. Your donation will enable us to hire
-              additional staff, ensuring that no one is left without the vital
-              assistance they need during this challenging time.
+              during this difficult time. The COVID-19 pandemic has skyrocketed the demand for MHASF's
+              mental health services. Our Warm Line team has been tirelessly
+              providing emotional and mental support to Californians. To meet
+              this growing need, we urge your generous support to expand our
+              team. Your donation will enable us to hire additional staff,
+              ensuring that no one is left without the vital assistance they
+              need during this challenging time.
             </p>
           </div>
         </div>
       </section>
+
       <Footer />
     </main>
   );
